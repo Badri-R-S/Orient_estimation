@@ -34,7 +34,7 @@ Clone the repo and run **python find_rot_soln0.py**
 As can be seen in this image, the key points are now much better, with focus primarily on the object of interest.
 
 ## PROBLEMS WITH SOLUTION 2
-Still, some matches are not accurate.
+Still, some matches are not accurate, with wrong correspondences.
 
 ## STEPS TO RUN SOLUTION 2
 The masked images are already generated and placed in the corresponding folder. If necessary, you can run the segmentation model again. Clone the SAM repo and place the segmentation.py file in the segment-anything folder. Do not forget to download the
