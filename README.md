@@ -21,6 +21,12 @@ Given a set of template images and a corresponding set of test images for each t
 ## PROBLEMS WITH SOLUTION 1
 As can be seen from the image, the key points selected are not only on the object of interest but also in the background. This leads to unnecessary noise and improper matches.
 
+<p align="center">
+  <img src="results/soln_0/1_1.jpg">
+</p>
+
+Despite having almost no rotation, we get 48 degrees as a result.
+
 ## STEPS TO RUN SOLUTION 1
 Clone the repo and run **python find_rot_soln0.py**
 
