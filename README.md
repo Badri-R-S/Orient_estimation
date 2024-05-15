@@ -6,7 +6,7 @@ Given a set of template images and a corresponding set of test images for each t
 2. numpy
 3. torch
 4. supervision==0.8.0
-5. SAM. Follow the instructions in this [**link**](https://github.com/facebookresearch/segment-anything) to install dependencies and requirements to install the model.
+5. SAM. Follow the instructions in this [**link**](https://github.com/facebookresearch/segment-anything) to install dependencies and requirements of the model.
 
 ## SOLUTION 1
 1. Used the regular ORB detector to detect key points and descriptors.
