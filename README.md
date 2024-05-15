@@ -14,6 +14,10 @@ Given a set of template images and a corresponding set of test images for each t
 3. Computed Homography matrix using the matched key points.
 4. Decomposed homography matrix to get the planar rotation between the images.
 
+<p align="center">
+  <img src="examples/sol0_example.jpg" width="500">
+</p>
+
 ## PROBLEMS WITH SOLUTION 1
 As can be seen from the image, the key points selected are not only on the object of interest but also in the background. This leads to unnecessary noise and improper matches.
 
@@ -22,6 +26,11 @@ Clone the repo and run **python find_rot_soln0.py**
 
 ## SOLUTION 2  
 1. Used the Segment Anything Model (SAM) to mask out the background.
+
+<p align="center">
+  <img src="examples/sol1_example.jpg" width="500">
+</p>
+
 As can be seen in this image, the key points are now much better, with focus primarily on the object of interest.
 
 ## PROBLEMS WITH SOLUTION 2
@@ -32,7 +41,12 @@ The masked images are already generated and placed in the corresponding folder. 
 default model_checkpoint(vit_h) for the SAM model, as instructed. Update the template_folder and  test_folder locations accordingly and run **python find _rot_soln1.py** 
 
 ## SOLUTION 3
-1. Used the Segment Anything Model alsong with the SIFT Operator and also some harsher quantity of match constraint (min 10).
+1. Used the Segment Anything Model along with the SIFT Operator and also some harsher quantity of match constraint (min 10).
+
+<p align="center">
+  <img src="examples/sol2_example.jpg" width="500">
+</p>
+
 As can be seen in image we get a much better solution and the matches are also really good.
 
 ## STEPS TO RUN SOLUTION 3
